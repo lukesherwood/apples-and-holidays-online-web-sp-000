@@ -65,9 +65,6 @@ holiday_hash.each do |season, holiday_name_hashes|
   puts "#{season.to_s.capitalize!}:"
   holiday_name_hashes.each do |holiday_name, supply_array|
   puts "  #{holiday_name.to_s.split('_').map(&:capitalize).join(' ')}: #{supply_array.to_s.gsub!(/[^A-Za-z, ]/, '')}"
-  
-      
-    end
 end
 end
 end
